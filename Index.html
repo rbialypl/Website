@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+		<title>Robert Bialy</title>
+	</head>
+	
+<body>
+	<div id = "header">
+		<img class="headerimage" src="images/hunk3.jpg" alt="Robert's Portrait">
+		<div id="name">ROBERT BIALY</div>
+
+			<button onmouseenter="openMenu()" onmouseleave="closeMenu()" class="dropbtn">Menu
+			<div style="clear:both;"></div> 
+			<div  id="navdrop" class="dropdown-content">
+			 	<a href="Index.html">Home</a>
+			    <a href="Work.html">Employment</a>
+			    <a href="School.html">Education</a>
+			    <a href="Projects.html">Projects</a>
+			</div>
+			</button>
+
+		<nav id="nav">
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Work.html">Employment</a></li>
+			<li><a href="School.html">Education</a></li>
+			<li><a href="Projects.html">Projects</a></li>
+		</ul>
+		</nav>
+	</div>
+
+	<div id = "buffer">
+	</div>
+
+	<div id = "content">
+		<div id="contact">
+			Superior
+			<div style="clear:both;"></div> 
+		</div>
+
+		<div id="tabcontent">
+			<p style="text-align: left;">
+				I am currently working as an Autherized Service Technician for Superior Digital Solutions as well as a part time Service Technician for Xerox. My work currently includes general setup of xerox printers at client sites as well as troubleshooting. Troubleshooting encompasses Image Quality issue, electrical as well as mechanical problems resulting from faulty parts and even as simple as paper jam issues.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function openMenu() {
+    document.getElementById("navdrop").classList.toggle("show");
+}
+function closeMenu(){
+	document.getElementById("navdrop").classList.toggle("show");
+}
+
+</script>
+
+<!--<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<title>Page Title</title>
+	</head>
+	
+<body>
+
+	<div id = "header">
+		<img class="headerImage" src="images/hunk.png" alt="Robert's Portrait">
+	</div>
+
+	<div>
+		 <table style="width:100%">
+			  <tr id = "tableHeader">
+			    <td class="empty"></td>
+			    <td class="top-to-bottom button" rowspan="2">ABOUT ME</td>
+			    <td class="space">
+			    <td class="top-to-bottom button" rowspan="2">EDUCATION</td>
+			    <td class="space">
+			    <td class="top-to-bottom button" rowspan="2">EMPLOYMENT</td>
+			    <td class="space">
+			    <td class="top-to-bottom button" rowspan="2">PROJECTS</td>
+			    <td class="empty"></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			  </tr>
+		 </table> 
+	</div>
+
+	<div id = "content">
+	</div>
+
+	<div id = "footer">
+	</div>
+
+</body>
+</html>--!>
