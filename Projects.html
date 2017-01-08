@@ -13,7 +13,7 @@
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
 
-			<button onmouseenter="openMenu()" onmouseleave="closeMenu()" class="dropbtn">Menu
+			<button onmouseenter="openMenu()" onmouseleave="openMenu()" class="dropbtn">Menu
 			<div style="clear:both;"></div>
 			<div id="navdrop" class="dropdown-content">
 				<a href="Index.html">Home</a>
@@ -33,23 +33,18 @@
 		</nav>
 	</div>
 
-	<div id = "buffer">
+	<div id="buffer">
 	</div>
 
-	<div id = "content">
+	<div id="content">
 		<div id="contact">
 			Xerox Service Technician<br>
 			<a class="invisible" href="mailto:robert.bialy@outlook.com">Email: robert.bialy@outlook.com</a>
-			<div style="clear:both;"></div>
 		</div>
 
 		<div id="tabcontent">
-			<p style="text-align: left;">
-				I am currently working as an Autherized Service Technician for Superior Digital Solutions as well as a part time Service Technician for Xerox. My work currently includes general setup of xerox printers at client sites as well as troubleshooting. Troubleshooting encompasses Image Quality issue, electrical as well as mechanical problems resulting from faulty parts and even as simple as paper jam issues. 
-			</p>
-			<p style="text-align: left;">
-				Although I throughly enjoy my work I also enjoy programming and try to find spare time to make software or work on my current video game project. Most of my programming background involves Java which was used in most of the courses in the Bachelor of Computer Science at Algoma University. Additionally, as a final year project I worked in a group to create a video game using the Unity3d game engine which used C# for it's scripting. I also was exposed to Microsoft Frameworks, specifically I helped design and develope a web application project management system using ASP.net MVC. Here I acquired a vast variety of experience in Ajax, C#, SQL Server Transact-SQL, JQuery, HTML, and CSS.
-			</p>
+			<h2 style="float:left;">Gladiator Game</h2>
+
 		</div>
 	</div>
 </body>
@@ -60,9 +55,6 @@
 	toggle between hiding and showing the dropdown content */
 	function openMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
-	}
-	function closeMenu(){
-		document.getElementById("navdrop").classList.toggle("show");
 	}
 </script>
 
