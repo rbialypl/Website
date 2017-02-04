@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+		<link rel="icon" type="image/png" href="images/icon.png">
 		<title>Robert Bialy</title>
 	</head>
 
@@ -13,7 +16,7 @@
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
 
-			<button onmouseenter="openMenu()" onmouseleave="openMenu()" class="dropbtn">Menu
+			<button onmouseenter="toggleMenu()" onmouseleave="toggleMenu()" class="dropbtn">Menu
 			<div style="clear:both;"></div>
 			<div id="navdrop" class="dropdown-content">
 				<a href="Index.html">Home</a>
@@ -38,39 +41,38 @@
 
 	<div id="content">
 		<div id="contact">
-			Xerox Service Technician<br>
-			 <a class="invisible" href="mailto:robert.bialy@outlook.com">Email: robert.bialy@outlook.com</a>
-			<div style="clear:both;"></div>
+			Technical Service Analyst<br>
+			<span class="contact-details">Sault Ste. Marie, ON, Canada</span>
+			<a href="mailto:robert.bialy@outlook.com">robert.bialy@outlook.com</a>
 		</div>
 
 		<div id="tabcontent">
-			<h2 style="float:left;"><a class="invisible" target="_blank" href="http://www.superiordigitalsolutions.ca/">Algoma University</a></h2>
-			<h3 style="float:right;">2010 – 2015</h3>
-			<div style="clear:both;"></div> 
-					
+			<h2 style="float:left;"><a class="invisible" target="_blank" href="https://www.algomau.ca/">Algoma University</a></h2>
+			<h3 style="float:right;">2010 - 2015</h3>
+			<div style="clear:both;"></div>
+
 			<p>
 				Bachelor of Computer Science (Honours)<br>
 				<em class="light">Sault Ste. Marie, ON, Canada</em><br>
 			</p>
 
-			<h2 style="float:left;"><a class="invisible" target="_blank" href="http://www.superiordigitalsolutions.ca/">St. Basil Secondary School</a></h2>
-			<h3 style="float:right;">2005 – 2009</h3>
-			<div style="clear:both;"></div> 
-					
+			<h2 style="float:left;">St. Basil Secondary School</h2>
+			<h3 style="float:right;">2005 - 2009</h3>
+			<div style="clear:both;"></div>
+
 			<p>
 				High School Diploma<br>
 				<em class="light">Sault Ste. Marie, ON, Canada</em><br>
 			</p>
-	
+
 		</div>
 	</div>
-</body>
-</html>
-
 <script>
 	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function openMenu() {
+	function toggleMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
 	}
 </script>
+</body>
+</html>

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+		<link rel="icon" type="image/png" href="images/icon.png">
 		<title>Robert Bialy</title>
 	</head>
 
@@ -13,7 +16,7 @@
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
 
-			<button onmouseenter="openMenu()" onmouseleave="closeMenu()" class="dropbtn">Menu
+			<button onmouseenter="toggleMenu()" onmouseleave="toggleMenu()" class="dropbtn">Menu
 			<div style="clear:both;"></div>
 			<div id="navdrop" class="dropdown-content">
 				<a href="Index.html">Home</a>
@@ -33,78 +36,49 @@
 		</nav>
 	</div>
 
-	<div id = "buffer">
+	<div id="buffer">
 	</div>
 
-	<div id = "content">
+	<div id="content">
 		<div id="contact">
-			Xerox Service Technician<br>
-			<a class="invisible" href="mailto:robert.bialy@outlook.com">Email: robert.bialy@outlook.com</a>
-			<div style="clear:both;"></div>
+			Technical Service Analyst<br>
+			<span class="contact-details">Sault Ste. Marie, ON, Canada</span>
+			<a href="mailto:robert.bialy@outlook.com">robert.bialy@outlook.com</a>
 		</div>
 
 		<div id="tabcontent">
+			<h2 style="float:left;">About Me and My Work</h2>
+			<div style="clear:both;"></div>
 			<p style="text-align: left;">
-				I am currently working as an Autherized Service Technician for Superior Digital Solutions as well as a part time Service Technician for Xerox. My work currently includes general setup of xerox printers at client sites as well as troubleshooting. Troubleshooting encompasses Image Quality issue, electrical as well as mechanical problems resulting from faulty parts and even as simple as paper jam issues. 
+				I am currently working as a Technical Service Analyst for <a href="http://superiordigitalsolutions.ca/" target="_blank">Superior Digital Solutions</a> as well as a part time Service Technician for <a href="https://www.xerox.ca/" target="_blank">Xerox</a>. My work includes the setup of Xerox printers at various client sites as well as in-depth troubleshooting. Troubleshooting encompasses image quality issues, electrical as well as mechanical problems, and even as simple as paper jams. In my previous work as a developer, I designed and developed a project management web application for <a href="http://www.essarsteelalgoma.com/" target="_blank">Essar Steel</a>. I moved the existing Access back-end over to an MS SQL server back-end, and also created an ASP.NET MVC front-end. I designed and developed extensively using C#, Javascript, jQuery, AJAX and HTML, while using an agile approach.
 			</p>
 			<p style="text-align: left;">
-				Although I throughly enjoy my work I also enjoy programming and try to find spare time to make software or work on my current video game project. Most of my programming background involves Java which was used in most of the courses in the Bachelor of Computer Science at Algoma University. Additionally, as a final year project I worked in a group to create a video game using the Unity3d game engine which used C# for it's scripting. I also was exposed to Microsoft Frameworks, specifically I helped design and develope a web application project management system using ASP.net MVC. Here I acquired a vast variety of experience in Ajax, C#, SQL Server Transact-SQL, JQuery, HTML, and CSS.
+				I also enjoy programming and find spare time to make my own programs, or work on my current video game project. My programming background involves Java, which I used throughout most of the courses it took while completing a Bachelor of Computer Science at <a href="https://www.algomau.ca/" target="_blank">Algoma University</a>. Additionally, as a final year project I worked in a group to create a video game using the Unity3d game engine, which uses C# for scripting. My current projects include a video game and an editing tool for adjusting meta-data for music files.
+			<p style="text-align: left;">
+			Skills Summary:
+			<ul>
+				<li><b>Languages:</b> C#, Java, HTML, CSS, JavaScript, jQuery</li>
+				<li><b>Frameworks/Approaches:</b> ASP.NET MVC, AJAX, Entity</li>
+				<li><b>Databases:</b> MS SQL Server</li>
+				<li><b>Tools:</b> Microsoft Visual Studio, Unity, Blender, GIT</li>
+			</ul>
+
+			<h2 style="float:left;">Other Hobbies</h2>
+			<div style="clear:both;"></div>
+			<p style="text-align: left;">
+				 Besides occupying myself with work and programming, in the warmer seasons I also enjoy hiking in Northern Ontario and biking along the Sault Ste. Marie <a href="http://www.hubtrail.com/" target="_blank">Hub Trail</a>. Going to the gym also provides me with a chance to break away from my day and clear my mind. In the winter months, I often go snowshoeing and skiing at the <a href="http://www.searchmont.com/" target="_blank">Searchmont Ski Resort</a>.
 			</p>
+			<p style="text-align: left;">
+
 		</div>
 	</div>
-</body>
-</html>
-
 <script>
 	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function openMenu() {
+	function toggleMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
 	}
-	function closeMenu(){
-		document.getElementById("navdrop").classList.toggle("show");
-	}
 </script>
-
-<!--<!DOCTYPE html>
-<html>
-
-	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<title>Page Title</title>
-	</head>
-
-<body>
-
-	<div id = "header">
-		<img class="headerImage" src="images/hunk.png" alt="Robert's Portrait">
-	</div>
-
-	<div>
-		 <table style="width:100%">
-			  <tr id = "tableHeader">
-			    <td class="empty"></td>
-			    <td class="top-to-bottom button" rowspan="2">ABOUT ME</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">EDUCATION</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">EMPLOYMENT</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">PROJECTS</td>
-			    <td class="empty"></td>
-			  </tr>
-			  <tr>
-			    <td></td>
-			    <td></td>
-			  </tr>
-		 </table>
-	</div>
-
-	<div id = "content">
-	</div>
-
-	<div id = "footer">
-	</div>
-
 </body>
-</html>--!>
+</html>
+

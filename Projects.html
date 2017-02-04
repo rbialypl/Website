@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+		<link rel="icon" type="image/png" href="images/icon.png">
 		<title>Robert Bialy</title>
 	</head>
 
@@ -13,7 +16,7 @@
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
 
-			<button onmouseenter="openMenu()" onmouseleave="openMenu()" class="dropbtn">Menu
+			<button onmouseenter="toggleMenu()" onmouseleave="toggleMenu()" class="dropbtn">Menu
 			<div style="clear:both;"></div>
 			<div id="navdrop" class="dropdown-content">
 				<a href="Index.html">Home</a>
@@ -38,65 +41,61 @@
 
 	<div id="content">
 		<div id="contact">
-			Xerox Service Technician<br>
-			<a class="invisible" href="mailto:robert.bialy@outlook.com">Email: robert.bialy@outlook.com</a>
+			Technical Service Analyst<br>
+			<span class="contact-details">Sault Ste. Marie, ON, Canada</span>
+			<a href="mailto:robert.bialy@outlook.com">robert.bialy@outlook.com</a>
 		</div>
 
 		<div id="tabcontent">
 			<h2 style="float:left;">Gladiator Game</h2>
+			<div style="clear:both;"></div>
+			<p style="text-align: left;">
+		        Gladiator was made during my final year at Algoma University over an 8 month period. It was built using the Unity engine with all modeled assets being made in Blender including rigging and animation. Our original goal was to create a basic video game using Agile Methodologies with simple assets so that we can learn both a new language C# and how a game engine works. During the second semester of development, once we got the basics done we started adding in simple AI, multiplayer and cleaner assets. 
+ 		    </p>
+ 		    <p style="text-align: left;">
+ 		   		The world was set in a post apocalyptic area and focused primarily on melee and ranged combat. We designed an arena waved based game mode to demonstrate our mechanics and AI. The rounds would start with only a couple of enemies and players would quickly be able to eliminate them using various attack types. A stab would apply a bleed while an overhead attack would do increased damage while leaving the player vulnerable to attack. A slash attack was also included which would be able to hit multiple enemies. As each round progressed the difficulty was increased as more enemies would spawn during each wave.
+ 		    </p>
+            <p style="text-align: left;">
+            	For the most part we accomplished what we set out to do however some areas we would have liked to improve or add are:
+            </p>
+				<ul>
+					<li>Improved AI</li>
+					<li>Difficulty Settings besides increasing the number of enemies</li>
+					<li>Smoother Animations</li>
+					<li>Improved Environments</li>
+                    <li>Additional Working Weapons</li>
+                    <li>Classes</li>
+                    <li>Bosses</li>
+				</ul>
+			<p>
+            	Videos: <a href="https://www.youtube.com/watch?v=1CEbYAckoBI">Game Environment 1</a>, <a href="https://www.youtube.com/watch?v=GdnOogBIfAc">Game Environment 2</a>
+            </p>
+            
+			<h2 style="float:left;">"Fruit Bunch" Game</h2>
+			<div style="clear:both;"></div>
+			<p style="text-align: left;">
+				This is a little game project I started working on to keep myself busy and not forget what I had learned previously about game design and working with a 3D game engine.
+				I desided to take a Unity3D tutorial titled <a href="https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial">Roll-a-Ball</a> and modify it into a platformer game with adjustable camera movements and AI. Currently this game has some basic assets and the primary mechanics for the playable character fleshed out. You can see how the game looks so far below.
+			</p>
+			<p>
+				Videos: <a href="https://www.youtube.com/watch?v=UXwUeLaqqlY">Fruit Game</a>
+			</p>
+			<h2 style="float:left;">Music Metadata Fixer</h2>
+			<div style="clear:both;"></div>
+			<p style="text-align: left;">
+				I enjoy listening to music while I work, surf the web or while playing games. As a result I felt like taking on a small project and designing a music library of my own. It originally started due to many of my music files missing meta-data such as artist, year, genre, among many others. Currently the program is able to extract the meta-data details and print them to the screen. Additional information about this project will be posted as more is developed.
+			</p>
 
 		</div>
 	</div>
-</body>
-</html>
-
 <script>
 	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function openMenu() {
+	function toggleMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
 	}
 </script>
-
-<!--<!DOCTYPE html>
-<html>
-
-	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<title>Page Title</title>
-	</head>
-
-<body>
-
-	<div id = "header">
-		<img class="headerImage" src="images/hunk.png" alt="Robert's Portrait">
-	</div>
-
-	<div>
-		 <table style="width:100%">
-			  <tr id = "tableHeader">
-			    <td class="empty"></td>
-			    <td class="top-to-bottom button" rowspan="2">ABOUT ME</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">EDUCATION</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">EMPLOYMENT</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">PROJECTS</td>
-			    <td class="empty"></td>
-			  </tr>
-			  <tr>
-			    <td></td>
-			    <td></td>
-			  </tr>
-		 </table>
-	</div>
-
-	<div id = "content">
-	</div>
-
-	<div id = "footer">
-	</div>
-
 </body>
-</html>--!>
+</html>
+
+

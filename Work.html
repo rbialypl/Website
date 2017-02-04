@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
+	        <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+		<link rel="icon" type="image/png" href="images/icon.png">
 		<title>Robert Bialy</title>
 	</head>
 
@@ -13,7 +16,7 @@
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
 
-			<button onmouseenter="openMenu()" onmouseleave="openMenu()" class="dropbtn">Menu
+			<button onmouseenter="toggleMenu()" onmouseleave="toggleMenu()" class="dropbtn">Menu
 			<div style="clear:both;"></div>
 			<div id="navdrop" class="dropdown-content">
 				<a href="Index.html">Home</a>
@@ -38,8 +41,11 @@
 
 	<div id="content">
 		<div id="contact">
-			Xerox Service Technician<br>
-			<a class="invisible" href="mailto:robert.bialy@outlook.com">Email: robert.bialy@outlook.com</a>
+			Technical Service Analyst<br>
+			<span class="contact-details">
+			Sault Ste. Marie, ON, Canada
+			</span>
+			<a href="mailto:robert.bialy@outlook.com">robert.bialy@outlook.com</a>
 		</div>
 
 		<div id="tabcontent">
@@ -96,56 +102,14 @@
 			</p>
 		</div>
 	</div>
-</body>
-</html>
-
 <script>
 	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function openMenu() {
+	function toggleMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
 	}
 </script>
-
-<!--<!DOCTYPE html>
-<html>
-
-	<head>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<title>Page Title</title>
-	</head>
-
-<body>
-
-	<div id = "header">
-		<img class="headerImage" src="images/hunk.png" alt="Robert's Portrait">
-	</div>
-
-	<div>
-		 <table style="width:100%">
-			  <tr id = "tableHeader">
-			    <td class="empty"></td>
-			    <td class="top-to-bottom button" rowspan="2">ABOUT ME</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">EDUCATION</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">EMPLOYMENT</td>
-			    <td class="space">
-			    <td class="top-to-bottom button" rowspan="2">PROJECTS</td>
-			    <td class="empty"></td>
-			  </tr>
-			  <tr>
-			    <td></td>
-			    <td></td>
-			  </tr>
-		 </table>
-	</div>
-
-	<div id = "content">
-	</div>
-
-	<div id = "footer">
-	</div>
-
 </body>
-</html>--!>
+</html>
+
+
