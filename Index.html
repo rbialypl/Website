@@ -2,8 +2,9 @@
 <html lang="en-CA">
 
 	<head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
@@ -15,17 +16,13 @@
 	<div id="header">
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
-
-			<button onmouseenter="toggleMenu()" onmouseleave="toggleMenu()" class="dropbtn">Menu
-			<div style="clear:both;"></div>
-			<div id="navdrop" class="dropdown-content">
-				<a href="Index.html">Home</a>
-			    <a href="Work.html">Employment</a>
-			    <a href="Education.html">Education</a>
-			    <a href="Projects.html">Projects</a>
-			</div>
-			</button>
-
+		<button onmouseenter="toggleMenu()" class="dropbtn">Menu</button>
+		<ul id="navdrop" class="dropdown-content">
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Work.html">Employment</a></li>
+			<li><a href="Education.html">Education</a></li>
+			<li><a href="Projects.html">Projects</a></li>
+		</ul>
 		<nav id="nav">
 		<ul>
 			<li><a href="Index.html">Home</a></li>
@@ -54,22 +51,24 @@
 			</p>
 			<p style="text-align: left;">
 				I also enjoy programming and find spare time to make my own programs, or work on my current video game project. My programming background involves Java, which I used throughout most of the courses it took while completing a Bachelor of Computer Science at <a href="https://www.algomau.ca/" target="_blank">Algoma University</a>. Additionally, as a final year project I worked in a group to create a video game using the Unity3d game engine, which uses C# for scripting. My current projects include a video game and an editing tool for adjusting meta-data for music files.
-			<p style="text-align: left;">
-			Skills Summary:
+			</p>
+
+			<h3 style="float:left;">Skills Summary:</h3>
+			<div style="clear:both;"></div>
 			<ul>
 				<li><b>Languages:</b> C#, Java, HTML, CSS, JavaScript, jQuery</li>
-				<li><b>Frameworks/Approaches:</b> ASP.NET MVC, AJAX, Entity</li>
+				<li><b>Frameworks / Approaches:</b> ASP.NET MVC, AJAX, Entity</li>
 				<li><b>Databases:</b> MS SQL Server</li>
 				<li><b>Tools:</b> Microsoft Visual Studio, Unity, Blender, GIT</li>
 			</ul>
+			
 
 			<h2 style="float:left;">Other Hobbies</h2>
 			<div style="clear:both;"></div>
+
 			<p style="text-align: left;">
 				 Besides occupying myself with work and programming, in the warmer seasons I also enjoy hiking in Northern Ontario and biking along the Sault Ste. Marie <a href="http://www.hubtrail.com/" target="_blank">Hub Trail</a>. Going to the gym also provides me with a chance to break away from my day and clear my mind. In the winter months, I often go snowshoeing and skiing at the <a href="http://www.searchmont.com/" target="_blank">Searchmont Ski Resort</a>.
 			</p>
-			<p style="text-align: left;">
-
 		</div>
 	</div>
 <script>
@@ -78,6 +77,12 @@
 	function toggleMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
 	}
+	/* When user resizes window, stop the drop down menu from showing */
+	window.onresize = function() {
+		if (document.getElementById("navdrop").className.match("show")) {
+			document.getElementById("navdrop").classList.toggle("show");
+		}
+	};
 </script>
 </body>
 </html>

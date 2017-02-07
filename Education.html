@@ -2,8 +2,9 @@
 <html lang="en-CA">
 
 	<head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
@@ -15,17 +16,13 @@
 	<div id="header">
 		<img class="portrait" src="images/portrait.jpg" alt="Robert's Portrait">
 		<div id="name">Robert Bialy</div>
-
-			<button onmouseenter="toggleMenu()" onmouseleave="toggleMenu()" class="dropbtn">Menu
-			<div style="clear:both;"></div>
-			<div id="navdrop" class="dropdown-content">
-				<a href="Index.html">Home</a>
-			    <a href="Work.html">Employment</a>
-			    <a href="Education.html">Education</a>
-			    <a href="Projects.html">Projects</a>
-			</div>
-			</button>
-
+		<button onmouseenter="toggleMenu()" class="dropbtn">Menu</button>
+		<ul id="navdrop" class="dropdown-content">
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Work.html">Employment</a></li>
+			<li><a href="Education.html">Education</a></li>
+			<li><a href="Projects.html">Projects</a></li>
+		</ul>
 		<nav id="nav">
 		<ul>
 			<li><a href="Index.html">Home</a></li>
@@ -73,6 +70,12 @@
 	function toggleMenu() {
 	    document.getElementById("navdrop").classList.toggle("show");
 	}
+	/* When user resizes window, stop the drop down menu from showing */
+	window.onresize = function() {
+		if (document.getElementById("navdrop").className.match("show")) {
+			document.getElementById("navdrop").classList.toggle("show");
+		}
+	};
 </script>
 </body>
 </html>
